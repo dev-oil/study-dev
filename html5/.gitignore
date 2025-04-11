@@ -17,3 +17,4 @@ Thumbs.db
 .LSOverride
 Icon?
 .firebase/
+.env

@@ -1,15 +1,16 @@
-var music = document.getElementById('music');
-var timeEl = document.getElementById('time');
+"use strict";
+const music = document.getElementById('music');
+const timeEl = document.getElementById('time');
 function musicPlay() {
-    music === null || music === void 0 ? void 0 : music.play();
+    music?.play();
 }
 function musicPause() {
-    music === null || music === void 0 ? void 0 : music.pause();
+    music?.pause();
 }
-music === null || music === void 0 ? void 0 : music.addEventListener('timeupdate', function () {
+music?.addEventListener('timeupdate', () => {
     if (!music || !timeEl)
         return;
-    var current = Math.floor(music.currentTime);
-    var duration = Math.floor(music.duration);
-    timeEl.innerText = "".concat(current, ":").concat(duration, "\uCD08");
+    const current = Math.floor(music.currentTime);
+    const duration = Math.floor(music.duration);
+    timeEl.innerText = `${current}:${duration}초`;
 });
