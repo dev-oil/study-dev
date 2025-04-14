@@ -9,6 +9,9 @@ function musicPause() {
   music?.pause();
 }
 
+(window as any).musicPlay = musicPlay;
+(window as any).musicPause = musicPause;
+
 music?.addEventListener('timeupdate', () => {
   if (!music || !timeEl) return;
 

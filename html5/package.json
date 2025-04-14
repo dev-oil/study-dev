@@ -1,17 +1,15 @@
 {
   "name": "html5",
-  "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "description": "",
   "devDependencies": {
-    "@types/google.maps": "^3.58.1",
-    "typescript": "^5.8.3"
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
   }
 }
