@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여러개 이미지 드래그</title>
+    <style>
+      .droppable {
+        display: flex;
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        border: 2px dashed red;
+      }
+      .img-container img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="droppable"
+      ondrop="drop(event)"
+      ondragover="dragover(event)"
+    ></div>
+
+    <script src="/src/drag_n_drop_external/drag_multi.ts"></script>
+  </body>
+</html>

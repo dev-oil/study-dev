@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>외부 이미지 드래그</title>
+    <style>
+      #droparea {
+        width: 1024px;
+        height: 500px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="droparea"
+      ondragover="dragover(event)"
+      ondrop="drop(event)"
+      ondragenter="dragenter(event)"
+    ></div>
+
+    <script src="/src/drag_n_drop_external/drag.ts"></script>
+  </body>
+</html>
