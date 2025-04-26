@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>local storage</title>
+  </head>
+  <body>
+    <ul>
+      <li>키 : <input type="text" id="key" /></li>
+      <li>값 : <input type="text" id="data" /></li>
+    </ul>
+
+    <input type="button" value="데이터 저장" onclick="saveData()" />
+    <input type="button" value="데이터 읽기" onclick="loadData()" />
+    <input type="button" value="항목 삭제" onclick="removeData()" />
+    <input type="button" value="전체 삭제" onclick="removeAllData()" />
+
+    <div id="result"></div>
+
+    <script src="/src/storage/session_storage.ts"></script>
+  </body>
+</html>

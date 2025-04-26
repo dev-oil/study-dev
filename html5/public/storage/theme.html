@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테마</title>
+
+    <style>
+      body.light {
+        background-color: #fff;
+        color: #000;
+      }
+
+      body.dark {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="light">
+    <h1>테마 변경</h1>
+    <input id="light" type="radio" name="theme" value="light" checked />
+    <label for="light">Light</label>
+    <input id="dark" type="radio" name="theme" value="dark" />
+    <label for="dark">Dark</label>
+
+    <script src="/src/storage/theme.ts"></script>
+  </body>
+</html>

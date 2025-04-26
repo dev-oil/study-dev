@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .video_box {
+        width: 100%;
+      }
+      .video_box video {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video_box">
+      <video id="vod" src="./beautiful.mp4" type="video/mp4"></video>
+      <input type="range" id="seekbar" value="0" onchange="updateVolume()" />
+    </div>
+
+    <button onclick="vodPlay()">재생</button>
+    <button onclick="vodPause()">정지</button>
+
+    <script src="/src/video/video.ts"></script>
+  </body>
+</html>
